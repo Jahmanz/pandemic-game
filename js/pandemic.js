@@ -12,11 +12,11 @@ export class Town {
       this.population = this.population - Math.ceil(this.diseased / 10);
       this.diseased = this.diseased - Math.ceil(this.diseased / 10);
       if (this.vaccinated) {
-        this.diseased = Math.min (Math.floor (this.diseased * 1.01), this.population);
+        this.diseased = Math.min (Math.floor(this.diseased * 1.01), this.population);
       } else if (this.curfew) {
-        this.diseased = Math.min (Math.floor (this.diseased * 1.5), this.population);
+        this.diseased = Math.min(Math.floor(this.diseased * 1.5), this.population);
       } else {
-        this.diseased = Math.min (Math.floor (this.diseased * 2), this.population);
+        this.diseased = Math.min(Math.floor(this.diseased * 2), this.population);
       }
     }, 1000);
   }
@@ -25,7 +25,7 @@ export class Town {
     this.diseased = 0;
   }
 
-  curfew() {
+  curfew2() {
     this.curfew = !this.curfew;
   }
 
@@ -34,7 +34,7 @@ export class Town {
   }
 
   treatment() {
-    this.diseased = this.diseased - 10;
+    this.diseased = Math.max (this.diseased - 10,0);
   }
 
 }

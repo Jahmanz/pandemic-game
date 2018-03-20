@@ -14,8 +14,7 @@ $(document).ready(function() {
   cowcity.spreadDisease();
   mtlake.spreadDisease();
 
-  $(document).ready(function() {
-    var i =1000;
+
     setInterval(function() {
       $("#smallvillepop").text(smallville.population.toString());
       $("#littletownpop").text(littletown.population.toString());
@@ -25,7 +24,56 @@ $(document).ready(function() {
       $("#littletowninfect").text(littletown.diseased.toString());
       $("#cowcityinfect").text(cowcity.diseased.toString());
       $("#mtlakeinfect").text(mtlake.diseased.toString());
-      i--;
+
     }, 1000)
+
+    $("button#smalltreat").click(function() {
+      smallville.treatment();
+    });
+    $("button#smallvacc").click(function() {
+      smallville.vaccinate();
+    });
+    $("button#smallcdc").click(function() {
+      smallville.callTheCDC();
+    });
+    $("button#smallcurfew").click(function() {
+      smallville.curfew2();
+    });
+    $("button#littletreat").click(function() {
+      littletown.treatment();
+    });
+    $("button#littlevacc").click(function() {
+      littletown.vaccinate();
+    });
+    $("button#littlecdc").click(function() {
+      littletown.callTheCDC();
+    });
+    $("button#littlecurfew").click(function() {
+      littletown.curfew2();
+    });
+    $("button#cowtreat").click(function() {
+      cowcity.treatment();
+    });
+    $("button#cowvacc").click(function() {
+      cowcity.vaccinate();
+    });
+    $("button#cowcdc").click(function() {
+      cowcity.callTheCDC();
+    });
+    $("button#cowcurfew").click(function() {
+      cowcity.curfew2();
+    });
+    $("button#mttreat").click(function() {
+      mtlake.treatment();
+    });
+    $("button#mtvacc").click(function() {
+      mtlake.vaccinate();
+    });
+    $("button#mtcdc").click(function() {
+      mtlake.callTheCDC();
+    });
+    $("button#mtcurfew").click(function() {
+      mtlake.curfew2();
+    });
+
   });
-});

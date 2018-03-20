@@ -6,30 +6,54 @@
   </head>
   <body>
   <div class="jumbotron">
-  <h1 class="display-4">PANDEMIC!!!</h1>
+  <center><h1 class="display-4">PANDEMIC!!!</h1></center>
 </div>
 <div class="container">
   <div class="row">
-    <div class="col">
-      <h4>Smallville </h4>
-      <p>Population: <span id="smallvillepop"></span></p>
-      <p>Infected: <span id="smallvilleinfect"></span></p>
-    </div>
-    <div class="col">
-      <h4>Littletown</h4>
-      <p>Population: <span id="littletownpop"></span></p>
-      <p>Infected: <span id="littletowninfect"></span></p>
-    </div>
-    <div class="col">
-      <h4>Cow City</h4>
-      <p>Population: <span id="cowcitypop"></span></p>
-      <p>Infected: <span id="cowcityinfect"></span></p>
-    </div>
+    <span class="border border-primary">
+      <div class="col">
+        <h4>Smallville </h4>
+        <p>Population: <span id="smallvillepop"></span></p>
+        <p>Infected: <span id="smallvilleinfect"></span></p>
+        <button type="button" class="btn btn-primary" id= "smalltreat">Treat</button>
+        <button type="button" class="btn btn-success" id = "smallvacc">Vaccinate</button>
+        <br>
+        <button type="button" class="btn btn-danger" id="smallcdc">CDC</button><button type="button" class="btn btn-info" id="smallcurfew">Curfew</button>
+        </div>
+    </span>
+    <span class="border border-secondary">
+      <div class="col">
+        <h4>Littletown</h4>
+        <p>Population: <span id="littletownpop"></span></p>
+        <p>Infected: <span id="littletowninfect"></span></p>
+        <button type="button" class="btn btn-primary" id = "littletreat">Treat</button>
+        <button type="button" class="btn btn-success" id = "littlevacc">Vaccinate</button>
+        <br>
+        <button type="button" class="btn btn-danger" id="littlecdc">CDC</button><button type="button" class="btn btn-info" id="littlecurfew">Curfew</button>
+      </div>
+    </span>
+    <span class="border border-warning">
+      <div class="col">
+        <h4>Cow City</h4>
+        <p>Population: <span id="cowcitypop"></span></p>
+        <p>Infected: <span id="cowcityinfect"></span></p>
+        <button type="button" class="btn btn-primary" id="cowtreat">Treat</button>
+        <button type="button" class="btn btn-success" id="cowvacc">Vaccinate</button>
+        <br>
+        <button type="button" class="btn btn-danger"id="cowcdc">CDC</button><button type="button" class="btn btn-info" id="cowcurfew">Curfew</button>
+      </div>
+    </span>
+    <span class="border border-info">
       <div class="col">
         <h4>Mount Lake</h4>
         <p>Population: <span id="mtlakepop"></span></p>
-        <p>Infected: <span id="mtlakeinfect"></span></p>      
-    </div>
+        <p>Infected: <span id="mtlakeinfect"></span></p>
+        <button type="button" class="btn btn-primary" id="mttreat">Treat</button>
+        <button type="button" class="btn btn-success" id="mtvacc">Vaccinate</button>
+        <br>
+        <button type="button" class="btn btn-danger" id="mtcdc">CDC</button><button type="button" class="btn btn-info" id="mtcurfew">Curfew</button>
+      </div>
+    </span>
   </div>
 </div>
   </body>
